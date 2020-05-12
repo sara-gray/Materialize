@@ -298,30 +298,30 @@
             </div>
             <div class="card-tabs">
               <ul class="tabs tabs-width-fixed">
-                <li>
+                <li class="tab">
                   <a href="#tab1">Tab 1</a>
                 </li>
-                <li>
+                <li class="tab">
                   <a href="#tab2">Tab 2</a>
                 </li>
-                <li>
+                <li class="tab">
                   <a href="#tab3">Tab 3</a>
                 </li>
               </ul>
             </div>
-            <div>
-              <div>This is the content for tab 1</div>
-              <div>This is the content for tab 2</div>
-              <div>This is the content for tab 3</div>
+            <div class="card-content">
+              <div id="tab1">This is the content for tab 1</div>
+              <div id="tab2">This is the content for tab 2</div>
+              <div id="tab3">This is the content for tab 3</div>
             </div>
           </div>
         </div>
 
         <div class="col s12 m6">
           <!-- TABBED CARD COLORED -->
-          <div>
-            <div>
-              <span>Tabbed Card</span>
+          <div class="card orange darken-2 white-text">
+            <div class="card-content">
+              <span class="card-title">Tabbed Card</span>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
                 rem obcaecati. Recusandae laborum, odit commodi fuga dolores
@@ -329,94 +329,86 @@
                 omnis voluptas sunt delectus ab?
               </p>
             </div>
-            <div>
-              <!-- make tabs transparent -->
-              <ul>
-                <li>
-                  <a href="#tab4">Tab 1</a>
+            <div class="card-tabs">
+              <ul class="tabs tabs-width-fixed   tabs-transparent">
+                <li class="tab">
+                  <a href="#tab11">Tab 1</a>
                 </li>
-                <li>
-                  <a href="#tab5">Tab 2</a>
+                <li class="tab">
+                  <a href="#tab12">Tab 2</a>
                 </li>
-                <li>
-                  <a href="#tab6">Tab 3</a>
+                <li class="tab">
+                  <a href="#tab13">Tab 3</a>
                 </li>
               </ul>
             </div>
-            <div>
-              <div>This is the content for tab 1</div>
-              <div>This is the content for tab 2</div>
-              <div>This is the content for tab 3</div>
+            <div class="card-content black lighten-4">
+              <div id="tab11">This is the content for tab 1</div>
+              <div id="tab12">This is the content for tab 2</div>
+              <div id="tab13">This is the content for tab 3</div>
             </div>
           </div>
         </div>
-      </div>
 
       <!-- CARD SIZES -->
       <div class="row">
         <div class="col s12 m4">
-          <!-- SMALL -->
-          <div>
-            <div>
-              <img src="" />
-              <span>Card Image</span>
+          <!-- SMALL -->          <div class="card small">
+            <div class="card-image">
+              <img src="img/img5.jpg" alt="" />
+              <span class="card-title blue">Card Image</span>
             </div>
-            <div>
+            <div class="card-content">
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                harum enim inventore ullam expedita nesciunt ea voluptatem
-                corporis iusto sint?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
-            <div>
-              <a href="#">Read More</a>
+            <div class="card-action">
+              <a href="#!">Read More</a>
             </div>
           </div>
         </div>
         <div class="col s12 m4">
-          <!-- MEDIUM -->
-          <div>
-            <div>
-              <img src="" />
-              <span>Card Image</span>
+          <!-- MEDIUM -->          <div class="card medium">
+            <div class="card-image">
+              <img src="img/img6.jpg" alt="" />
+              <span class="card-title blue">Card Image</span>
             </div>
-            <div>
+            <div class="card-content">
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
                 harum enim inventore ullam expedita nesciunt ea voluptatem
                 corporis iusto sint?
               </p>
             </div>
-            <div>
-              <a href="#">Read More</a>
+            <div class="card-action">
+              <a href="#!">Read More</a>
             </div>
           </div>
         </div>
         <div class="col s12 m4">
-          <!-- LARGE -->
-          <div>
-            <div>
-              <img src="" />
-              <span>Card Image</span>
+          <!-- LARGE -->          <div class="card large">
+            <div class="card-image">
+              <img src="img/img7.jpg" alt="" />
+              <span class="card-title blue">Card Image</span>
             </div>
-            <div>
+            <div class="card-content">
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
                 harum enim inventore ullam expedita nesciunt ea voluptatem
                 corporis iusto sint?
               </p>
             </div>
-            <div>
-              <a href="#">Read More</a>
+            <div class="card-action">
+              <a href="#!">Read More</a>
             </div>
           </div>
         </div>
-      </div>
 
       <!-- CARD PANELS & SHADOW -->
       <div class="row">
         <div class="col s12 m3">
-          <div>
+          <div class="card-panel blue z-depth-0">
             <span
               >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
               magni aut mollitia quis? Ab voluptate quaerat libero voluptatibus
@@ -426,7 +418,17 @@
           </div>
         </div>
         <div class="col s12 m3">
-          <div>
+          <div class="card-panel indigo z-depth-2">
+            <span class="white-text"
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+              magni aut mollitia quis? Ab voluptate quaerat libero voluptatibus
+              quisquam in dolorum nobis hic. Suscipit dignissimos laboriosam id
+              nesciunt debitis exercitationem.
+            </span>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card-panel cyan z-depth-4">
             <span
               >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
               magni aut mollitia quis? Ab voluptate quaerat libero voluptatibus
@@ -436,17 +438,7 @@
           </div>
         </div>
         <div class="col s12 m3">
-          <div>
-            <span
-              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
-              magni aut mollitia quis? Ab voluptate quaerat libero voluptatibus
-              quisquam in dolorum nobis hic. Suscipit dignissimos laboriosam id
-              nesciunt debitis exercitationem.
-            </span>
-          </div>
-        </div>
-        <div class="col s12 m3">
-          <div>
+          <div class="card-panel amber z-depth-5">
             <span
               >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
               magni aut mollitia quis? Ab voluptate quaerat libero voluptatibus
