@@ -130,37 +130,47 @@
     <!-- START HERE -->
     <form>
       <!-- SWITCH -->
-      <div>
-
+      <div class="switch">
+        <label>
+          Disable
+          <input type="checkbox" checked>
+          <span class="lever"></span>
+          Enable
+        </label>
       </div>
 
       <!-- DISABLED SWITCH -->
-      <div>
-
+      <div class="switch">
+        <label>
+          Disable
+          <input type="checkbox">
+          <span class="lever"></span>
+          Enable
+        </label>
       </div>
 
       <br>
       <br>
 
       <!-- FILE INPUT -->
-      <div>
-        <div>
+      <div class="file-field input-field">
+        <div class="btn">
           <span>Upload File</span>
           <input type="file">
         </div>
-        <div>
-          <input type="text">
+        <div class="file-path-wrapper">
+          <input class="file-path" type="text">
         </div>
       </div>
 
       <!-- RANGE SLIDER -->
-      <p>
-        <input type="range">
+      <p class="range-field">
+        <input type="range" min="0" max="100">
       </p>
 
       <!-- DATE PICKER -->
-      <div>
-        <input type="text" id="date">
+      <div class="input-field">
+        <input type="text" class="datepicker" id="date">
         <label for="date">Choose a Date</label>
       </div>
 
@@ -214,6 +224,9 @@
 
       // JAVASCRIPT START HERE //
 
+      $('.datepicker').pickadate({
+        selectMonths: true;
+      });
 
 
 
