@@ -164,10 +164,31 @@
       <br />
 
       <!-- TOOLTIPS -->
-      <a class="btn">Bottom Tooltip</a>
-      <a class="btn">Top Tooltip</a>
-      <a class="btn">Right Tooltip</a>
-      <a class="btn">Left Tooltip</a>
+      <a
+        class="btn tooltipped"
+        data-delay="2000"
+        data-position="bottom"
+        data-tooltip="I am a tootltip"
+        >Bottom Tooltip</a
+      >
+      <a
+        class="btn tooltipped"
+        data-position="top"
+        data-tooltip="I am a tootltip"
+        >Top Tooltip</a
+      >
+      <a
+        class="btn tooltipped"
+        data-position="right"
+        data-tooltip="I am a tootltip"
+        >Right Tooltip</a
+      >
+      <a
+        class="btn tooltipped"
+        data-position="left"
+        data-tooltip="I am a tootltip"
+        >Left Tooltip</a
+      >
 
       <!-- END HERE -->
     </div>
@@ -191,9 +212,16 @@
 
         // JAVASCRIPT START HERE //
 
-        $('#toast1').click(function () {
-          Materialize.toast('My toast', 3000);
-        });
+        // $('#toast1').click(function () {
+        //   Materialize.toast('My toast', 3000);
+        // });
+
+        document
+          .getElementById('toast1')
+          .addEventListener('click', function () {
+            Materialize.toast('My toast', 3000);
+          });
+
         $('#toast2').click(function () {
           Materialize.toast('My round toast', 3000, 'rounded red');
         });
@@ -202,6 +230,11 @@
             alert('Toast Dismissed!');
           });
         });
+        // Materialize.toast('I can make toast', 3000);
+
+        // setTimeout(function () {
+        //   Materialize.Toast.removeAll();
+        // }, 2000);
       });
     </script>
   </body>
